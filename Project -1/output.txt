@@ -1,0 +1,54 @@
+
+Sort records by (1) FIRST name (2) LAST name (3) GPA (4) ID (5) EMAIL (6) QUIT :  1
+
+Barry           Cat             3.4             887619648               sdfa@pierce.edu
+Dada            Era             1.2             887364374               asfj@pierce.edu
+Harry           Ham             2.4             887139678               fay.jones@pierce.edu
+Maru            Lol             1.2             887334927               lsdj@pierce.edu
+Qvd             Wfd             9.4             883789385               dfgina@pierce.edu
+Rav             Cat             4.4             887612348               lofdna@pierce.edu
+Vera            Wan             2.2             883927485               asdj@pierce.edu
+
+Sort records by (1) FIRST name (2) LAST name (3) GPA (4) ID (5) EMAIL (6) QUIT :  2
+
+Barry           Cat             3.4             887619648               sdfa@pierce.edu
+Rav             Cat             4.4             887612348               lofdna@pierce.edu
+Dada            Era             1.2             887364374               asfj@pierce.edu
+Harry           Ham             2.4             887139678               fay.jones@pierce.edu
+Maru            Lol             1.2             887334927               lsdj@pierce.edu
+Vera            Wan             2.2             883927485               asdj@pierce.edu
+Qvd             Wfd             9.4             883789385               dfgina@pierce.edu
+
+Sort records by (1) FIRST name (2) LAST name (3) GPA (4) ID (5) EMAIL (6) QUIT :  3
+
+Dada            Era             1.2             887364374               asfj@pierce.edu
+Maru            Lol             1.2             887334927               lsdj@pierce.edu
+Vera            Wan             2.2             883927485               asdj@pierce.edu
+Harry           Ham             2.4             887139678               fay.jones@pierce.edu
+Barry           Cat             3.4             887619648               sdfa@pierce.edu
+Rav             Cat             4.4             887612348               lofdna@pierce.edu
+Qvd             Wfd             9.4             883789385               dfgina@pierce.edu
+
+Sort records by (1) FIRST name (2) LAST name (3) GPA (4) ID (5) EMAIL (6) QUIT :  4
+
+Qvd             Wfd             9.4             883789385               dfgina@pierce.edu
+Vera            Wan             2.2             883927485               asdj@pierce.edu
+Harry           Ham             2.4             887139678               fay.jones@pierce.edu
+Maru            Lol             1.2             887334927               lsdj@pierce.edu
+Dada            Era             1.2             887364374               asfj@pierce.edu
+Rav             Cat             4.4             887612348               lofdna@pierce.edu
+Barry           Cat             3.4             887619648               sdfa@pierce.edu
+
+Sort records by (1) FIRST name (2) LAST name (3) GPA (4) ID (5) EMAIL (6) QUIT :  5
+
+Vera            Wan             2.2             883927485               asdj@pierce.edu
+Dada            Era             1.2             887364374               asfj@pierce.edu
+Qvd             Wfd             9.4             883789385               dfgina@pierce.edu
+Harry           Ham             2.4             887139678               fay.jones@pierce.edu
+Rav             Cat             4.4             887612348               lofdna@pierce.edu
+Maru            Lol             1.2             887334927               lsdj@pierce.edu
+Barry           Cat             3.4             887619648               sdfa@pierce.edu
+
+Sort records by (1) FIRST name (2) LAST name (3) GPA (4) ID (5) EMAIL (6) QUIT :  6
+
+BYE!
