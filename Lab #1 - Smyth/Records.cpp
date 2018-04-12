@@ -1,4 +1,4 @@
-// Smyth, Ravela -- CS 536 -- Project #3 -- Records.cpp
+// Smyth, Ravela -- CS 536 -- Project #1 -- Records.cpp
 
 #include "stdafx.h"
 #include <iostream>
