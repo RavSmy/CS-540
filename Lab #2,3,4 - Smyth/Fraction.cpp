@@ -1,4 +1,4 @@
-// Smyth, Ravela -- CS 540 --Lab #2 --Fraction.cpp 
+// Smyth, Ravela -- CS 540 -- Lab #2+3+4 --Fraction.cpp 
 
 #include "stdafx.h"
 #include <iostream>
