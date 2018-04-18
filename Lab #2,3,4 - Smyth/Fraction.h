@@ -31,7 +31,8 @@ public:
 	~Fraction();
 
 	//**LAB 4** --- Operator Overloading
-
+	Fraction operator+(const Fraction& obj);
+	Fraction operator*(const Fraction& obj);
 };
 
 #endif
