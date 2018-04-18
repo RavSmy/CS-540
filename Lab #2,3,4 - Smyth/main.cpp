@@ -30,10 +30,19 @@ int main() {
 
 	//**LAB 3** --- Constructor + Destructor
 	Fraction myfrac4 = myfrac3; 
-	myfrac4.print();
+	myfrac4.print();	
 
 	myfrac4.~Fraction();
 	myfrac4.print();
+
+	//**LAB 4** --- Operator Overloading
+	Fraction myfrac5;
+
+	myfrac5 = myfrac3+myfrac2;
+	myfrac5.print();
+
+	myfrac5 = myfrac3 * myfrac2;
+	myfrac5.print();
 
 	// Free Pointer
 	delete myfrac1;
