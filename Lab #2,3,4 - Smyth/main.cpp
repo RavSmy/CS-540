@@ -1,7 +1,7 @@
 // Smyth, Ravela -- CS 540 -- Lab #2+3+4 -- main.cpp
 #include "stdafx.h"
 #include <iostream>
-#include "Fraction.cpp"
+#include "Fraction.h"
 
 using namespace std;
 
@@ -18,26 +18,25 @@ int main() {
 		myfrac1->print();
 	}
 
-
+	
 	//2 ARGS--format: (numerator denominator)
-	Fraction *myfrac2 = new Fraction(3, 4);
-	myfrac2->print();
-
-	myfrac2->setWhole(10);
-	myfrac2->setDenom(-20);
-	myfrac2->print();
+	Fraction myfrac2(1,8);
+	 myfrac2.print();
 
 
 	//THREE ARGS--format: (whole numerator denominator)
-	Fraction *myfrac3 = new Fraction(1, 8, 3);
-	myfrac3->print();
+	Fraction myfrac3(1, 8, 3);
+	myfrac3.print();
 
-	myfrac3->setNumer(10);
-	myfrac3->setDenom(100);
-	myfrac3->print();
+	//**LAB 3** --- Constructor + Destructor
+	Fraction myfrac4 = myfrac3; 
+	myfrac4.print();
+
+	myfrac4.~Fraction();
+	myfrac4.print();
 
 	// Free Pointer
-	delete myfrac1, myfrac2, myfrac3;
-	myfrac1 = nullptr; myfrac2 = nullptr; myfrac3 = nullptr;
+	delete myfrac1;
+	myfrac1 = nullptr;  
 
 }
