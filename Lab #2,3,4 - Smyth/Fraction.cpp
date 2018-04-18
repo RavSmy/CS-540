@@ -67,3 +67,25 @@ Fraction::~Fraction() {
 }
 
 //**LAB 4** --- Operator Overloading
+Fraction Fraction::operator+(const Fraction& obj) {
+	int denominator = (obj.getDenom() * denom) / gcd(obj.getDenom(), denom);
+	int numerator = numer * (denominator / denom) + obj.numer * (denominator / obj.denom) ;
+
+	Fraction sum(0, numerator, denominator);
+	return sum;
+}
+
+Fraction Fraction::operator*(const Fraction& obj) {
+	int numerator = ((obj.getWhole() * obj.getDenom()) + obj.getNumer()) * ((whole * denom) + numer)
+	  , denominator = obj.getDenom() * denom;
+
+	Fraction mult(0, numerator, denominator);
+	return mult;
+}
+
+int gcd(int a, int b)
+{
+	if (a == 0)
+		return b;
+	return gcd(b%a, a);
+}
