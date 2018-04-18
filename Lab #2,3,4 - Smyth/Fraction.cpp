@@ -1,68 +1,69 @@
 // Smyth, Ravela -- CS 540 -- Lab #2+3+4 --Fraction.cpp 
 
 #include "stdafx.h"
+#include "Fraction.h"
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-class Fraction {
 
-private:
-	int denom, numer, whole;
+void Fraction::check() {
 
-	void check() {
-
-		if (denom == 0) { denom = 1; cout << "Denominator changed to 1, it can't be 0.\n"; }
-		if (numer < 0 || denom < 0 || whole < 0) {
-			cout << "Your values were negative, now absolute value.\n";
-			denom = abs(denom); numer = abs(numer); whole = abs(whole);
-		}
-
-		if (numer > denom) {
-			whole += numer / denom;
-			numer = numer % denom;
-		}
-
+	if (denom == 0) { denom = 1; cout << "Denominator changed to 1, it can't be 0.\n"; }
+	if (numer < 0 || denom < 0 || whole < 0) {
+		cout << "Your values were negative, now absolute value.\n";
+		denom = abs(denom); numer = abs(numer); whole = abs(whole);
 	}
 
-public:
-
-	Fraction() {
-		denom = 1; numer = 0; whole = 0;
+	if (numer > denom) {
+		whole += numer / denom;
+		numer = numer % denom;
 	}
+}          
 
-	Fraction(int n, int d) {
-		denom = d;
-		whole = 0;
-		numer = n;
+Fraction::Fraction() {
+	denom = 1; numer = 0; whole = 0;
+}
 
-		check();
-	}
+Fraction::Fraction(int n, int d) {
+	denom = d;
+	whole = 0;
+	numer = n;
 
-	Fraction(int w, int n, int d) {
-		denom = d;
-		whole = w;
-		numer = n;
+	check();
+}
 
-		check();
-	}
+Fraction::Fraction(int w, int n, int d) {
+	denom = d;
+	whole = w;
+	numer = n;
 
-	void print() {
-		cout << "Your fraction:";
-		if (whole != 0) cout << ' ' << whole << " ";
-		cout << numer << "/" << denom << '\n';
-	}
+	check();
+}
 
-	void setDenom(int d) { denom = d; check(); }
-	void setNumer(int n) { numer = n; check(); }
-	void setWhole(int w) { whole = w; check(); }
-	void setAll(int w, int n, int d) {
-		denom = d; whole = w; numer = n;
-		check();
-	}
+void Fraction::print() {
+	cout << "Your fraction:";
+	if (whole != 0) cout << ' ' << whole << " ";
+	cout << numer << "/" << denom << '\n';
+}
 
-	int getDenom() const { return denom; }
-	int getNumer() const { return numer; }
-	int getWhole() const { return whole; }
+void Fraction::setAll(int w, int n, int d) {
+	denom = d; whole = w; numer = n;
+	check();
+}
 
-};
+//**LAB 3** --- Constructor + Destructor
+
+Fraction::Fraction(const Fraction &obj) {
+	cout << "Copy Constructor Called...\n";
+	whole = obj.whole;
+	numer = obj.numer;
+	denom = obj.denom;
+}
+
+Fraction::~Fraction() {
+	cout << "Destructor Called...\n";
+	whole = 0; denom = 1; numer = 0; 
+}
+
+//**LAB 4** --- Operator Overloading
