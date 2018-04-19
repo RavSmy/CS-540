@@ -20,25 +20,11 @@ void Fraction::check() {
 	}
 }          
 
-Fraction::Fraction() {
-	denom = 1; numer = 0; whole = 0;
-}
+Fraction::Fraction() {	setAll(0,0,1); }
 
-Fraction::Fraction(int n, int d) {
-	denom = d;
-	whole = 0;
-	numer = n;
+Fraction::Fraction(int n, int d) { setAll(0, n, d); }
 
-	check();
-}
-
-Fraction::Fraction(int w, int n, int d) {
-	denom = d;
-	whole = w;
-	numer = n;
-
-	check();
-}
+Fraction::Fraction(int w, int n, int d) { setAll(w,n,d); }
 
 void Fraction::print() {
 	cout << "\nF: ";
