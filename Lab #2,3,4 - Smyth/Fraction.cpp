@@ -5,7 +5,7 @@
 #include <cmath>
 using namespace std;
 
-
+/*LAB #2*/
 void Fraction::check() {
 
 	if (denom == 0) { denom = 1; cout << "-->Denominator changed to 1, it can't be 0.\n"; }
@@ -37,19 +37,19 @@ void Fraction::setAll(int w, int n, int d) {
 	check();
 }
 
-//**LAB 3** --- Copy Constructor + Destructor
-
+/*LAB #3 -- Copy Constructor + Destructor*/
+ 
 Fraction::Fraction(const Fraction &obj) {
 	cout << "-->Copy Constructor Called...\n";
 	setAll (obj.whole, obj.numer, obj.denom);
 }
-
+ 
 Fraction::~Fraction() {
 	cout << "-->Destructor Called...\n";
 	setAll(0,0,1);
 }
 
-//**LAB 4** --- Operator Overloading
+/*LAB #4 -- Operation Overloading*/
 Fraction Fraction::operator+(const Fraction& obj) {
 	int denominator = (obj.getDenom() * denom) / gcd(obj.getDenom(), denom);
 
@@ -68,8 +68,7 @@ Fraction Fraction::operator*(const Fraction& obj) {
 	return mult;
 }
 bool Fraction::operator==(const Fraction& obj) {
-	return (add_whole_To_num(this)/denom) == (add_whole_To_num(&obj)/obj.getDenom()) 
-		? true : false; 
+	return add_whole_To_num(this)/denom == add_whole_To_num(&obj)/obj.getDenom();
 }
 
 void Fraction::operator=(const Fraction& obj) {
