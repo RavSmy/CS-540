@@ -1,6 +1,5 @@
 // Smyth, Ravela -- CS 540 -- Lab #2+3+4 --Fraction.cpp 
 
-#include "stdafx.h"
 #include "Fraction.h"
 #include <iostream>
 #include <cmath>
@@ -9,9 +8,9 @@ using namespace std;
 
 void Fraction::check() {
 
-	if (denom == 0) { denom = 1; cout << "Denominator changed to 1, it can't be 0.\n"; }
+	if (denom == 0) { denom = 1; cout << "-->Denominator changed to 1, it can't be 0.\n"; }
 	if (numer < 0 || denom < 0 || whole < 0) {
-		cout << "Your values were negative, now absolute value.\n";
+		cout << "-->Your values were negative, now absolute value.\n";
 		denom = abs(denom); numer = abs(numer); whole = abs(whole);
 	}
 
@@ -42,8 +41,8 @@ Fraction::Fraction(int w, int n, int d) {
 }
 
 void Fraction::print() {
-	cout << "Your fraction:";
-	if (whole != 0) cout << ' ' << whole << " ";
+	cout << "\nF: ";
+	if (whole != 0) cout << whole << " ";
 	cout << numer << "/" << denom << '\n';
 }
 
@@ -52,40 +51,51 @@ void Fraction::setAll(int w, int n, int d) {
 	check();
 }
 
-//**LAB 3** --- Constructor + Destructor
+//**LAB 3** --- Copy Constructor + Destructor
 
 Fraction::Fraction(const Fraction &obj) {
-	cout << "Copy Constructor Called...\n";
-	whole = obj.whole;
-	numer = obj.numer;
-	denom = obj.denom;
+	cout << "-->Copy Constructor Called...\n";
+	setAll (obj.whole, obj.numer, obj.denom);
 }
 
 Fraction::~Fraction() {
-	cout << "Destructor Called...\n";
-	whole = 0; denom = 1; numer = 0; 
+	cout << "-->Destructor Called...\n";
+	setAll(0,0,1);
 }
 
 //**LAB 4** --- Operator Overloading
 Fraction Fraction::operator+(const Fraction& obj) {
 	int denominator = (obj.getDenom() * denom) / gcd(obj.getDenom(), denom);
-	int numerator = numer * (denominator / denom) + obj.numer * (denominator / obj.denom) ;
+
+	int numerator = (add_whole_To_num(this) * (denominator / denom)) + 
+			(add_whole_To_num(&obj) * (denominator / obj.getDenom())) ;
 
 	Fraction sum(0, numerator, denominator);
 	return sum;
 }
 
 Fraction Fraction::operator*(const Fraction& obj) {
-	int numerator = ((obj.getWhole() * obj.getDenom()) + obj.getNumer()) * ((whole * denom) + numer)
+	int numerator = add_whole_To_num(&obj) * add_whole_To_num(this)
 	  , denominator = obj.getDenom() * denom;
 
 	Fraction mult(0, numerator, denominator);
 	return mult;
 }
+bool Fraction::operator==(const Fraction& obj) {
+	return (add_whole_To_num(this)/denom) == (add_whole_To_num(&obj)/obj.getDenom()) 
+		? true : false; 
+}
 
-int gcd(int a, int b)
+void Fraction::operator=(const Fraction& obj) {
+	setAll(obj.getWhole(), obj.getNumer(), obj.getDenom()); 
+}
+
+int Fraction::gcd(int a, int b)
 {
-	if (a == 0)
-		return b;
+	if (a == 0) return b;
 	return gcd(b%a, a);
+}
+
+int Fraction::add_whole_To_num(const Fraction* obj) {
+	return (obj->getWhole() * obj->getDenom()) + obj->getNumer();
 }
