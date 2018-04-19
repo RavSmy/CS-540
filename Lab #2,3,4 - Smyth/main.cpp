@@ -8,16 +8,17 @@ using namespace std;
 int main() {
 
 	//NO ARGS--default: denom = 1, numer = 0, whole = 0
-	Fraction *myfrac1 = new Fraction();
-	myfrac1->print();
-	cout << "   [frac2: 0/1]\n\n";
+	Fraction *myfrac1 = new (nothrow) Fraction();
+	if (myfrac1 != nullptr) {
+		if (myfrac1->print();
+		cout << "   [frac2: 0/1]\n\n";
 
-	myfrac1->setWhole(-10);
-	myfrac1->setDenom(0);
-	myfrac1->setNumer(1);
-	myfrac1->print();
-	cout << "   [frac1: 11 0/1]\n\n";
-
+		myfrac1->setWhole(-10);
+		myfrac1->setDenom(0);
+		myfrac1->setNumer(1);
+		myfrac1->print();
+		cout << "   [frac1: 11 0/1]\n\n";
+	}
 
 	
 	//2 ARGS--format: (numerator denominator)
@@ -65,7 +66,5 @@ int main() {
 
 	// Free Pointer
 	delete myfrac1;
-	//myfrac1 = nullptr;  
-	myfrac1 = NULL;
-
+	myfrac1 = nullptr;  
 }
