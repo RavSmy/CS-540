@@ -11,7 +11,7 @@ private:
 	void check();
 public:
 
-   /*LAB #2*/
+	/*LAB #2*/
 	Fraction();
 
 	Fraction(int n, int d);
@@ -29,17 +29,16 @@ public:
 	int getNumer() const { return numer; }
 	int getWhole() const { return whole; }
 
-   /*LAB #3 -- Copy Constructor + Destructor*/
+	/*LAB #3 -- Copy Constructor + Destructor*/
 	Fraction(const Fraction &obj);
 	~Fraction();
 
-   /*LAB #4 -- Operation Overloading*/ 
+	/*LAB #4 -- Operation Overloading*/
 	Fraction operator+(const Fraction& obj);
 	Fraction operator*(const Fraction& obj);
 	bool operator==(const Fraction& obj);
 	void operator=(const Fraction& obj);
 
-	int gcd(int a, int b);
 	int add_whole_To_num(const Fraction* obj);
 };
 
