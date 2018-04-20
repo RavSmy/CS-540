@@ -68,7 +68,7 @@ Fraction Fraction::operator*(const Fraction& obj) {
 	return mult;
 }
 bool Fraction::operator==(const Fraction& obj) {
-	return add_whole_To_num(this) / denom == add_whole_To_num(&obj) / obj.denom;
+	return (add_whole_To_num(this) * obj.denom) == (add_whole_To_num(&obj) * denom);
 }
 
 void Fraction::operator=(const Fraction& obj) {
