@@ -9,6 +9,8 @@ private:
 	int denom, numer, whole;
 
 	void check();
+	int add_whole_To_num(const Fraction* obj);
+
 public:
 
 	/*LAB #2*/
@@ -38,8 +40,7 @@ public:
 	Fraction operator*(const Fraction& obj);
 	bool operator==(const Fraction& obj);
 	void operator=(const Fraction& obj);
-
-	int add_whole_To_num(const Fraction* obj);
+	
 };
 
 #endif
