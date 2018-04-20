@@ -1,4 +1,4 @@
-OUTPUT:
+OUTPUT: 
 
 F: 0/1
    [frac2: 0/1]
@@ -28,11 +28,15 @@ F: 3 2/3
 F: 0/1
    [~frac4: 0/1]
 
+-->Copy Constructor Called...
+-->Destructor Called...
 -->Destructor Called...
 
 F: 3 19/24
    [frac5 = frac3 (3 2/3) + frac2 (1/8) : 3 19/24]
 
+-->Copy Constructor Called...
+-->Destructor Called...
 -->Destructor Called...
 
 F: 11/24
