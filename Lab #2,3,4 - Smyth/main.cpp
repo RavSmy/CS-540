@@ -70,10 +70,16 @@ int main() {
 	if (myfrac6 == myfrac3) cout << "EQUAL\n\n";
 	else cout << "NOT EQUAL\n\n";
 
-	Fraction myfrac7(3, 4, 1);
+	Fraction myfrac7(3, 4, 3);
 	cout << "\n   [frac7 (3 4/1) and frac3 (3 2/3) are: ";
 	if (myfrac7 == myfrac3) cout << "EQUAL\n\n";
 	else cout << "NOT EQUAL\n\n";
 
+	/*LAB #5 -- << >> Overloading*/
+	Fraction myfrac8;  
+	cout << "Input frac8 (w n/d): ";	
+	cin >> myfrac8; 
+	cout << "Your frac8 : " << myfrac8 << "\n"; 
 
-}
+}   
+	

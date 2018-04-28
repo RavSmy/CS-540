@@ -1,7 +1,10 @@
 // Smyth, Ravela -- CS 540 -- Lab #2+3+4 --Fraction.h 
 
 #ifndef FRACTION_H
-#define FRACTION_H
+#define FRACTION_H 
+#include <iostream>   
+
+using namespace std;
 
 class Fraction {
 
@@ -40,7 +43,10 @@ public:
 	Fraction operator*(const Fraction& obj);
 	bool operator==(const Fraction& obj);
 	void operator=(const Fraction& obj);
-	
+
+	/*LAB #5 -- << >> Overloading*/
+	friend 	ostream& operator<<(ostream &os, const Fraction& obj);
+	friend 	istream& operator>>(istream &is, Fraction& obj);
 };
 
 #endif

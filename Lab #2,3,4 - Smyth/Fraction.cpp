@@ -78,3 +78,15 @@ void Fraction::operator=(const Fraction& obj) {
 int Fraction::add_whole_To_num(const Fraction* obj) {
 	return (obj->whole * obj->denom) + obj->numer;
 }
+
+	
+ostream& operator<<(ostream &os, const Fraction& obj) {
+	os << obj.whole << " " << obj.numer << "/" << obj.denom;
+	return os;  
+} 
+
+istream& operator>>(istream &is, Fraction& obj) { 
+	char slash;
+	is >> obj.whole >> obj.numer >> slash >> obj.denom;
+	return is; 
+}
