@@ -1,4 +1,4 @@
-// Smyth, Ravela -- CS 540 -- Lab #2+3+4 -- main.cpp
+// Smyth, Ravela -- CS 540 -- Lab #2+3+4+5+6 -- main.cpp
 
 #include <iostream>
 #include "Fraction.h"
