@@ -2,12 +2,14 @@
 #include "Creature.h"
 #include "Demon.h"
 
+
 int main()
 {
 	Demon demon;
 	Creature creature;  
-	
-	for (int i = 0 ; i < 10 ; i++) std::cout << "\ndemon.getDamage(): " << demon.getDamage(); 
-	for (int i = 0 ; i < 10 ; i++) std::cout << "\ncreature.getDamage(): " << creature.getDamage(); 
+	srand ( time(0) );
+
+	for (int i = 0 ; i < 10 ; i++) std::cout << "demon.getDamage(): " << demon.getDamage()<< std::endl; 
+	for (int i = 0 ; i < 10 ; i++) std::cout << "creature.getDamage(): " << creature.getDamage() << std::endl; 
 }
 

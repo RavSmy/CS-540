@@ -4,8 +4,6 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
-#include <time.h>
-
 
 class Creature {
 

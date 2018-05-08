@@ -12,9 +12,8 @@ Creature::Creature(int newStrength, int newHit) {
 }
 
 int Creature::getDamage() {
-	srand ( time(NULL) );
 	int damage = (rand() % strength) + 1;
-	std::cout << "\n" << getSpecies() << " attacks for " << damage << " points!" << std::endl;
+	std::cout << std::endl << getSpecies() << " attacks for " << damage << " points!" << std::endl;
 	return damage;
 }
 
