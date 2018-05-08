@@ -1,4 +1,3 @@
-#include <string>
 #include "Creature.h"
 
 
@@ -15,7 +14,7 @@ Creature::Creature(int newStrength, int newHit) {
 int Creature::getDamage() {
 	srand ( time(NULL) );
 	int damage = (rand() % strength) + 1;
-	std::cout << getSpecies() << " attacks for " << damage << " points!" << std::endl;
+	std::cout << "\n" << getSpecies() << " attacks for " << damage << " points!" << std::endl;
 	return damage;
 }
 
