@@ -1,7 +1,11 @@
 #ifndef CREATURE_H
 #define CREATURE_H
 
+#include <iostream>
 #include <string>
+#include <cstdlib>
+#include <time.h>
+
 
 class Creature {
 

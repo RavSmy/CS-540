@@ -1,15 +1,22 @@
-// ConsoleApplication2.cpp : Defines the entry point for the console application.
-//
-
-#include "stdafx.h"
-#include "Creature.h"
+#include <iostream>
 #include "Elf.h"
 #include "Human.h"
-using namespace std;
+#include "Creature.h"
+#include "Demon.h"
+#include "Balrogs.h"
+#include "Cyberdemon.h"
 
 int main()
 {
-	Elf elf1;
 	Human human1;
+	Elf elf1;
+	Balrogs balrogs1;
+	Cyberdemon cd1;
+	
+	std::cout << "human1.getDamage(): " << human1.getDamage()
+	     << "\nelf1.getDamage(): " << elf1.getDamage()
+	     << "\nbalrogs1.getDamage(): " << balrogs1.getDamage()
+	     << "\ncyberdemon1.getDamage(): " << cd1.getDamage()
+	     << "\n";
 }
 

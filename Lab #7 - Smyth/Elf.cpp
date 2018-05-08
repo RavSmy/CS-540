@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Elf.h"
 
 Elf::Elf() : Creature() {}
