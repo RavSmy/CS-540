@@ -1,4 +1,4 @@
-// Smyth, Ravela -- CS 540 TH. --  Lab #2+3+4+5+6 --Fraction.h 
+// Smyth, Ravela -- CS 540 TH. --  Lab #5+6 --Fraction.h 
 
 #ifndef FRACTION_H
 #define FRACTION_H 
