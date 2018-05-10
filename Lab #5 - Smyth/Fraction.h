@@ -23,7 +23,7 @@ public:
 
 	Fraction(int w, int n, int d);
 
-	void print();
+	void  print() const;
 
 	void setDenom(int d) { denom = d; check(); }
 	void setNumer(int n) { numer = n; check(); }

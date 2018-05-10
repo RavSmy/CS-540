@@ -1,0 +1,57 @@
+F: 0/1
+   [frac2: 0/1]
+
+-->Your values were negative, now absolute value.
+-->Denominator changed to 1, it can't be 0.
+
+F: 10 1/1
+   [frac1: 11 0/1]
+
+-->Destructor Called...
+
+F: 1/8
+   [frac2: 1/8]
+
+
+F: 3 2/3
+   [frac3: 3 2/3]
+
+-->Copy Constructor Called...
+
+F: 3 2/3
+   [frac4 = frac3 : 3 2/3]
+
+-->Destructor Called...
+
+F: 0/1
+   [~frac4: 0/1]
+
+-->Destructor Called...
+
+F: 3 19/24
+   [frac5 = frac3 (3 2/3) + frac2 (1/8) : 3 19/24]
+
+-->Destructor Called...
+
+F: 11/24
+   [frac5 = frac3 (3 2/3) * frac2 (1/8) : 11/24]
+
+
+   [frac6 (3 4/6) and frac3 (3 2/3) are: EQUAL
+
+
+   [frac7 (3 4/1) and frac3 (3 2/3) are: NOT EQUAL
+
+Input frac8 (w n/d): 9 4/0
+-->Denominator changed to 1, it can't be 0.
+Your frac8 : 
+F: 13 0/1
+
+-->Destructor Called...
+-->Destructor Called...
+-->Destructor Called...
+-->Destructor Called...
+-->Destructor Called...
+-->Destructor Called...
+-->Destructor Called...
+

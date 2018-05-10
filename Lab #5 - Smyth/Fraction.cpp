@@ -26,7 +26,7 @@ Fraction::Fraction(int n, int d) { setAll(0, n, d); }
 
 Fraction::Fraction(int w, int n, int d) { setAll(w, n, d); }
 
-void Fraction::print() {
+void Fraction::print() const {
 	cout << "\nF: ";
 	if (whole != 0) cout << whole << " ";
 	cout << numer << "/" << denom << '\n';
@@ -78,10 +78,9 @@ void Fraction::operator=(const Fraction& obj) {
 int Fraction::add_whole_To_num(const Fraction* obj) {
 	return (obj->whole * obj->denom) + obj->numer;
 }
-
 	
 ostream& operator<<(ostream &os, const Fraction& obj) {
-	os << obj.whole << " " << obj.numer << "/" << obj.denom;
+	obj.print();
 	return os;  
 } 
 
