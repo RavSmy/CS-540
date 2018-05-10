@@ -1,67 +1,68 @@
-./main
-
-Demon attacks for 3 points!
+Demon attacks for 1 points!
 Demonic attack inflicts 50 additional damage points!
-demon.getDamage(): 53
-
-Demon attacks for 3 points!
-demon.getDamage(): 3
-
-Demon attacks for 9 points!
-Demonic attack inflicts 50 additional damage points!
-demon.getDamage(): 59
-
-Demon attacks for 10 points!
-demon.getDamage(): 10
+demon.getDamage(): 51
 
 Demon attacks for 5 points!
-demon.getDamage(): 5
-
-Demon attacks for 7 points!
-demon.getDamage(): 7
-
-Demon attacks for 7 points!
-demon.getDamage(): 7
-
-Demon attacks for 7 points!
 Demonic attack inflicts 50 additional damage points!
-demon.getDamage(): 57
+demon.getDamage(): 55
+
+Demon attacks for 2 points!
+demon.getDamage(): 2
+
+Demon attacks for 6 points!
+Demonic attack inflicts 50 additional damage points!
+demon.getDamage(): 56
+
+Demon attacks for 5 points!
+Demonic attack inflicts 50 additional damage points!
+demon.getDamage(): 55
+
+Demon attacks for 10 points!
+Demonic attack inflicts 50 additional damage points!
+demon.getDamage(): 60
+
+Demon attacks for 5 points!
+Demonic attack inflicts 50 additional damage points!
+demon.getDamage(): 55
 
 Demon attacks for 8 points!
 Demonic attack inflicts 50 additional damage points!
 demon.getDamage(): 58
 
-Demon attacks for 7 points!
+Demon attacks for 8 points!
+demon.getDamage(): 8
+
+Demon attacks for 1 points!
 Demonic attack inflicts 50 additional damage points!
-demon.getDamage(): 57
+demon.getDamage(): 51
+
+Creature attacks for 1 points!
+creature.getDamage(): 1
 
 Creature attacks for 2 points!
 creature.getDamage(): 2
-
-Creature attacks for 5 points!
-creature.getDamage(): 5
-
-Creature attacks for 10 points!
-creature.getDamage(): 10
-
-Creature attacks for 2 points!
-creature.getDamage(): 2
-
-Creature attacks for 2 points!
-creature.getDamage(): 2
-
-Creature attacks for 8 points!
-creature.getDamage(): 8
 
 Creature attacks for 4 points!
 creature.getDamage(): 4
 
-Creature attacks for 8 points!
-creature.getDamage(): 8
+Creature attacks for 4 points!
+creature.getDamage(): 4
+
+Creature attacks for 3 points!
+creature.getDamage(): 3
 
 Creature attacks for 4 points!
 creature.getDamage(): 4
 
 Creature attacks for 2 points!
 creature.getDamage(): 2
+
+Creature attacks for 1 points!
+creature.getDamage(): 1
+
+Creature attacks for 2 points!
+creature.getDamage(): 2
+
+Creature attacks for 3 points!
+creature.getDamage(): 3
 

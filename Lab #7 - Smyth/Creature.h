@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #7 -- Creature.h
+
 #ifndef CREATURE_H
 #define CREATURE_H
 

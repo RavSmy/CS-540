@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #7 -- Demon.h
+
 #ifndef DEMON_H
 #define DEMON_H
 

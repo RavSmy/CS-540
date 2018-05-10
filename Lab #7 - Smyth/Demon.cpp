@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #7 -- Demon.cpp
+
 #include "Demon.h"
 
 Demon::Demon() : Creature() {}
