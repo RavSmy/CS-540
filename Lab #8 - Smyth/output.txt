@@ -1,0 +1,7 @@
+
+Demon attacks for 9 points!
+Demonic attack inflicts 50 additional damage points!
+
+Demon attacks for 3 points!
+a[0] old strength = 10 , old hitpoints = 10
+a[0] new strength = 5 , new hitpoints = 5
