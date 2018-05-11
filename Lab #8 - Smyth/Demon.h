@@ -5,17 +5,13 @@
 
 #include "Creature.h"
 
-class Demon : public Creature{
-private:
-	std::string getSpecies() override;
+class Demon : public Creature {
 public:
 	Demon();
 	Demon(int, int);
 	int getDamage();
-	
-
 };
 
 
 
-#endif 
+#endif  

@@ -9,12 +9,12 @@
 
 class Creature {
 
-private: 
+private:
 	int strength;
 	int hitpoints;
 	virtual std::string getSpecies() = 0;
 
-public: 
+public:
 	Creature();
 	Creature(int newStrength, int newHit);
 
