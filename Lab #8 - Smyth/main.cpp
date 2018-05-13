@@ -13,20 +13,28 @@
 int main()
 {
 	srand(time(0));
+	
+	Creature *a[4];
+	a[0] = new (nothrow) Balrogs(3,100);
+	a[1] = new (nothrow) Elf(5, 100);
+	a[2] = new (nothrow) Cyberdemon(10, 100);
+	a[3] = new (nothrow) Human(20, 100);
 
-	Creature *a[3];
-	a[0] = new Balrogs(5,200);
-	a[1] = new Elf(5, 300);
-	a[2] = new Cyberdemon(100, 100);
+	if (a[0] != nullptr && a[1] != nullptr && a[2] != nullptr && a[3] != nullptr) {
+		
+		int i = 0;
+		while (a[1]->getHitpoints() > 0 && a[0]->getHitpoints() > 0 && a[2]->getHitpoints() > 0 && a[3]->getHitpoints() > 0 ) {
+			a[i%4]->setHitpoints(a[i%4]->getHitpoints() - a[(rand() % 4)]->getDamage());
+			i++; 
+		};
 
-	while (a[1]->getHitpoints() > 0 && a[0]->getHitpoints() > 0 && a[2]->getHitpoints() > 0 ) {
-		a[1]->setHitpoints(a[1]->getHitpoints() - a[2]->getDamage());
-		a[0]->setHitpoints(a[0]->getHitpoints() - a[1]->getDamage());
-		a[2]->setHitpoints(a[2]->getHitpoints() - a[0]->getDamage());
-	};
+		std::cout << "\n\nSCORES\nBalrog has " << a[0]->getHitpoints()
+			<< "\nElf has " << a[1]->getHitpoints() 
+			<< "\nCyberdemon has " << a[2]->getHitpoints() 
+			<< "\nHuman has " << a[3]->getHitpoints() << std::endl;
+	}
 
-	std::cout << "\n\nSCORES\nBalrgo has " << a[0]->getHitpoints()
-		<< "\nElf has " << a[1]->getHitpoints() 
-		<< "\nCyberdemon has " << a[2]->getHitpoints() << std::endl;
-}
-
+	// Free Pointer
+	for (int i = 0 ; i < 4; i++) {		
+		delete a[i]; 
+		a[i] = nullptr; }

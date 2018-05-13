@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #8 -- Balrogs.h
+
 #ifndef BALROGS_H
 #define BALROGS_H
 

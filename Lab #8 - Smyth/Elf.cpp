@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #8 -- Elf.cpp
+
 #include "Elf.h"
 
 Elf::Elf() : Creature() {}

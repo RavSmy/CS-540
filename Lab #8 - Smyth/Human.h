@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #8 -- Human.h
+
 #ifndef HUMAN_H
 #define HUMAN_H
 

@@ -1,7 +1,73 @@
+Elf attacks for 2 points!
 
-Demon attacks for 9 points!
-Demonic attack inflicts 50 additional damage points!
+Human attacks for 19 points!
 
-Demon attacks for 3 points!
-a[0] old strength = 10 , old hitpoints = 10
-a[0] new strength = 5 , new hitpoints = 5
+Balrogs attacks for 1 points!
+Balrog speed attack inflicts 1 additional damage points!
+
+Cyberdemon attacks for 7 points!
+
+Balrogs attacks for 3 points!
+Balrog speed attack inflicts 2 additional damage points!
+
+Human attacks for 18 points!
+
+Elf attacks for 1 points!
+
+Human attacks for 16 points!
+
+Balrogs attacks for 3 points!
+Balrog speed attack inflicts 1 additional damage points!
+
+Elf attacks for 4 points!
+
+Human attacks for 12 points!
+
+Elf attacks for 4 points!
+
+Human attacks for 6 points!
+
+Human attacks for 19 points!
+
+Human attacks for 2 points!
+
+Balrogs attacks for 3 points!
+Balrog speed attack inflicts 1 additional damage points!
+
+Cyberdemon attacks for 8 points!
+
+Human attacks for 17 points!
+
+Human attacks for 6 points!
+
+Human attacks for 3 points!
+
+Elf attacks for 2 points!
+
+Elf attacks for 5 points!
+Magical attack inflict 5 additional damage points!
+
+Cyberdemon attacks for 2 points!
+
+Balrogs attacks for 3 points!
+Balrog speed attack inflicts 1 additional damage points!
+
+Elf attacks for 3 points!
+
+Elf attacks for 4 points!
+
+Human attacks for 4 points!
+
+Human attacks for 18 points!
+
+Cyberdemon attacks for 5 points!
+
+Cyberdemon attacks for 10 points!
+
+
+SCORES
+Balrog has 65
+Elf has -1
+Cyberdemon has 71
+Human has 44
+

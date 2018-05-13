@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #8 -- Human.cpp
+
 #include "Human.h"
 
 std::string Human::getSpecies() { return "Human"; }

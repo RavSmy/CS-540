@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #8 -- Balrogs.cpp
+
 #include "Balrogs.h"
 
 std::string Balrogs::getSpecies() { return "Balrogs"; }

@@ -8,9 +8,9 @@ Demon::Demon(int strength, int hitpoints) : Creature(strength, hitpoints) {}
 
 int Demon::getDamage() {
 	int damage = Creature::getDamage();
-	if ((rand() % 100) < 50) {
-		damage = damage + 50;
-		std::cout << "Demonic attack inflicts 50 additional damage points!" << std::endl;
+	if ((rand() % 100) < 10) {
+		damage = damage + 10;
+		std::cout << "Demonic attack inflicts 10 additional damage points!" << std::endl;
 	}
 
 	return damage;

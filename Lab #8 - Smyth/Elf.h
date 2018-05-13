@@ -1,3 +1,5 @@
+// Smyth, Ravela -- CS 540 TH. -- Lab #8 -- Elf.h
+
 #ifndef ELF_H
 #define ELF_H
 
