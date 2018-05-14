@@ -1,11 +1,11 @@
-// Smyth, Ravela -- CS 540 TH. --  Lab #9 --Fraction.cpp 
+// Smyth, Ravela -- CS 540 TH. --  Lab #9 -- Fraction.cpp 
 
 #include "Fraction.h"
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-void Fraction::check() {
+void Fraction::check() { 
 
 	if (denom == 0) { denom = 1; cout << "-->Denominator changed to 1, it can't be 0.\n"; }
 	if (numer < 0 || denom < 0 || whole < 0) {
@@ -27,7 +27,7 @@ Fraction::Fraction(int w, int n, int d) { setAll(w, n, d); }
 
 void Fraction::print() const {
 	if (whole != 0) cout << whole << " ";
-	cout << numer << "/" << denom;
+	cout << numer << "/" << denom << "\t";
 }
 
 void Fraction::setAll(int w, int n, int d) {
@@ -36,12 +36,10 @@ void Fraction::setAll(int w, int n, int d) {
 }
 
 Fraction::Fraction(const Fraction &obj) {
-	cout << "-->Copy Constructor Called...\n";
 	setAll(obj.whole, obj.numer, obj.denom);
 }
 
 Fraction::~Fraction() {
-	cout << "-->Destructor Called...\n";
 	setAll(0, 0, 1);
 }
 
