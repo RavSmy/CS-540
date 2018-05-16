@@ -15,10 +15,10 @@ int main()
 	srand(time(0));
 	
 	Creature *a[4];
-	a[0] = new (nothrow) Balrogs(3,100);
-	a[1] = new (nothrow) Elf(5, 100);
-	a[2] = new (nothrow) Cyberdemon(10, 100);
-	a[3] = new (nothrow) Human(20, 100);
+	a[0] = new (std::nothrow) Balrogs(3,100);
+	a[1] = new (std::nothrow) Elf(5, 100);
+	a[2] = new (std::nothrow) Cyberdemon(10, 100);
+	a[3] = new (std::nothrow) Human(20, 100);
 
 	if (a[0] != nullptr && a[1] != nullptr && a[2] != nullptr && a[3] != nullptr) {
 		
