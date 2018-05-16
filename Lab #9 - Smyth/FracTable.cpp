@@ -33,6 +33,6 @@ void FracTable::print_table(){
 }
 
 FracTable::~FracTable(){
-	for (int i = 0 ; i < size*size; i++) { delete table[i]; table[i] = NULL;} 
-	delete table; table = NULL;
+	for (int i = 0 ; i < size*size; i++) { delete table[i]; table[i] = nullptr;} 
+	delete table; table = nullptr;
 }
