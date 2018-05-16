@@ -38,3 +38,4 @@ int main()
 	for (int i = 0 ; i < 4; i++) {		
 		delete a[i]; 
 		a[i] = nullptr; }
+}
