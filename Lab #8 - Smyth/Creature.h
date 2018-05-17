@@ -24,6 +24,8 @@ public:
 	int getHitpoints();
 	void setStrength(int strength);
 	void setHitpoints(int hitpoints);
+
+	virtual ~Creature() {strength=0; hitpoints=0;};
 };
 
 
