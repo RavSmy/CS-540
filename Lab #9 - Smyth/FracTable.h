@@ -16,7 +16,6 @@ public:
 	FracTable(int size);	
 	void print_table();
 	~FracTable();
-	
 };
 
 

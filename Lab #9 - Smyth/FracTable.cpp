@@ -10,19 +10,14 @@ FracTable::FracTable(int size){
 	table = new Fraction*[size*size];
 	
 	//Filling first row
-		for (int i = 0; i < size; i++)
+		for (int i = 0; i < size; i++){
 			table[i] = new Fraction(i,size); 
-	//Filling first column
-		for (int i = 1; i < size; i++)
-			table[i*size] = new Fraction(i,size); 
+			table[i*size] = table[i]; 
+		}
 	//Filling by multiplication
 		for (int row = 1; row < size; row++)
-			for (int col = 1; col < size; col++){
-				if (col%size == 0) continue; 				
-				Fraction* temp = new Fraction();
-				*temp = *table[col*size] * *table[row];
-				table[row+(col*size)] = temp;
-			}	
+			for (int col = 1; col < size; col++)
+				if (col%size != 0) table[row+(col*size)] = new Fraction(row*col, size*size);
 }
 
 void FracTable::print_table(){
@@ -33,6 +28,6 @@ void FracTable::print_table(){
 }
 
 FracTable::~FracTable(){
-	for (int i = 0 ; i < size*size; i++) { delete table[i]; table[i] = nullptr;} 
-	delete table; table = nullptr;
+	for (int i = 0 ; i < size*size; i++) { delete table[i]; table[i] = NULL;} 
+	delete table; table = NULL;
 }
