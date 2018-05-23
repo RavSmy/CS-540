@@ -7,11 +7,11 @@
 
 class Demon : public Creature{
 private:
-	std::string getSpecies();
+	std::string getSpecies()  const;
 public:
 	Demon();
 	Demon(int, int);
-	int getDamage();
+	int getDamage()  const;
 };
 
 
