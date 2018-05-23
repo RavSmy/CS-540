@@ -6,7 +6,7 @@ Demon::Demon() : Creature() {}
 
 Demon::Demon(int strength, int hitpoints) : Creature(strength, hitpoints) {}
 
-int Demon::getDamage() {
+int Demon::getDamage()  const {
 	int damage = Creature::getDamage();
 	if((rand() % 100) < 50){
 		damage = damage + 50;
@@ -16,4 +16,4 @@ int Demon::getDamage() {
 	return damage;
 }
 
-std::string Demon::getSpecies(){ return "Demon"; }
+std::string Demon::getSpecies()  const { return "Demon"; }
