@@ -12,15 +12,15 @@ class Creature {
 private: 
 	int strength;
 	int hitpoints;
-	virtual std::string getSpecies();
+	virtual std::string getSpecies() const;
 
 public: 
 	Creature();
 	Creature(int newStrength, int newHit);
 	virtual int getDamage();
 
-	int getStrength();
-	int getHitpoints();
+	int getStrength() const;
+	int getHitpoints() const;
 	void setStrength(int strength);
 	void setHitpoints(int hitpoints);
 };
